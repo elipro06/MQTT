@@ -7,33 +7,30 @@ import platform
 st.markdown("""
     <style>
         .stApp {
-            background-color: #121212;
-            color: #ffffff;
+            background-color: #f0f4f8;
+            color: #333333;
         }
         h1, h2, h3, h4, h5, h6, p, span, label {
-            color: #8e24aa !important;
+            color: #2c3e50 !important;
         }
         .stButton>button {
             font-weight: 600;
-            border-radius: 8px;
-            padding: 0.7em 1.5em;
-            background-color: #6200ea;
-            color: #f5f5f5;
+            border-radius: 12px;
+            padding: 0.6em 1.5em;
+            background-color: #3498db;
+            color: #ffffff;
             border: none;
             transition: 0.3s;
         }
         .stButton>button:hover {
-            background-color: #bb86fc;
-            color: #000;
+            background-color: #1abc9c;
+            color: #fff;
         }
         div.stSlider > label {
-            color: #ffeb3b !important;
-        }
-        .stSlider>div>div>div>div>input {
-            background-color: #6200ea;
+            color: #2ecc71 !important;
         }
         .stAlert {
-            background-color: #3700b3;
+            background-color: #2ecc71;
             color: #ffffff;
             font-weight: bold;
         }
@@ -90,3 +87,4 @@ if st.button('📤 Transmitir valor analógico'):
     client1.connect(broker, port)
     message = json.dumps({"Analogico": float(values)})
     ret = client1.publish("cmqtt_a", message)
+
