@@ -7,27 +7,35 @@ import platform
 st.markdown("""
     <style>
         .stApp {
-            background-color: #1a1a2e;
-            color: #e0e0e0;
+            background-color: #121212;
+            color: #ffffff;
         }
         h1, h2, h3, h4, h5, h6, p, span, label {
-            color: #e0f7fa !important;
+            color: #8e24aa !important;
         }
         .stButton>button {
             font-weight: 600;
-            border-radius: 12px;
-            padding: 0.6em 1.5em;
-            background-color: #0f3460;
-            color: #f1f1f1;
+            border-radius: 8px;
+            padding: 0.7em 1.5em;
+            background-color: #6200ea;
+            color: #f5f5f5;
             border: none;
             transition: 0.3s;
         }
         .stButton>button:hover {
-            background-color: #e94560;
-            color: #fff;
+            background-color: #bb86fc;
+            color: #000;
         }
         div.stSlider > label {
-            color: #ffde59 !important;
+            color: #ffeb3b !important;
+        }
+        .stSlider>div>div>div>div>input {
+            background-color: #6200ea;
+        }
+        .stAlert {
+            background-color: #3700b3;
+            color: #ffffff;
+            font-weight: bold;
         }
     </style>
 """, unsafe_allow_html=True)
